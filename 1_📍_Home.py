@@ -65,7 +65,7 @@ def homepage():
             with left_column:
                 st.image("images/data_visualise.png")
             with right_column:
-                st.image("images/data_visualise.png")
+                st.image("images/marks_visualize.png")
         
 
     st.markdown("© 2024 Course File APP. All rights reserved. Created with python by :blue[shailesh]")   
