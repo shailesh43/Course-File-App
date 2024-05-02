@@ -3,6 +3,7 @@ import pandas as pd
 import base64
 import os
 from io import BytesIO
+
 #PAGE CONFIG
 st.set_page_config(page_title="CourseFile app", layout="wide")
 
@@ -31,41 +32,6 @@ def get_download_link(path_to_excel):
     
     return download_link
 
-# def display_excel_with_download_link(path_to_excel):
-#     """
-#     Display the contents of an Excel file and provide a download link
-#     """
-#     # Read the Excel file into a DataFrame
-#     df = pd.read_excel(path_to_excel, engine='openpyxl')
-    
-#     # Display the DataFrame
-#     st.write(df)
-    
-#     # Provide a download link for the Excel file
-#     download_link = get_download_link(df)
-#     st.markdown(download_link, unsafe_allow_html=True)
-    
-
-
-
-
-
-def xl_input_and_read_spreadsheets():
-
-    # File upload widget
-    uploaded_file = st.file_uploader("Upload Excel file", type=["xlsx", "xls"])
-
-    if uploaded_file is not None:
-        # Read the Excel file
-        xl = pd.ExcelFile(uploaded_file)
-        sheet_names = xl.sheet_names
-
-        # Display list of sheet names
-        st.subheader(":green[Sheet Names]")
-        for sheet_name in sheet_names:
-            st.write(sheet_name)
-            df = pd.read_excel(uploaded_file, sheet_name=sheet_name)
-            st.write(df)
 
 
 def append_excel_files(uploaded_files_folder):
@@ -99,9 +65,7 @@ def append_excel_files(uploaded_files_folder):
 
 
 def uploadexcelpage():
-    # directory = ".\\courses"
-    # read_excel_files(directory)
-
+    
     st.subheader("Download Format excel ➡️ Input data ➡️ Upload to add in Courses")
     with st.container():
         st.markdown("### :gray[NOTE :]")
@@ -128,12 +92,5 @@ def uploadexcelpage():
             st.success("Course Added Successfully!")
 
 
-
-
-
-    # path_to_excel = "courses/Format_Excel_Course_Info.xlsx"
-    # download_link = get_download_link(path_to_excel)
-    # st.markdown(download_link, unsafe_allow_html=True)
-    
 
 uploadexcelpage()

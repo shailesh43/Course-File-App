@@ -5,7 +5,7 @@ from PIL import Image
 
 
 #PAGE CONFIG
-st.set_page_config(page_title="CourseFile app",page_icon="Ⅳ", layout="wide")
+st.set_page_config(page_title="CourseFile app",page_icon="💀", layout="wide")
 
 #LOAD LOTTIE FILES
 def load_lottiefile(filepath: str):

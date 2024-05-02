@@ -5,13 +5,7 @@ import pandas as pd
 #PAGE CONFIG
 st.set_page_config(page_title="CourseFile app", layout="wide")
 
-
-
-
 # READ EXCEL WITHOUT PLOTTING
-
-
-
 def read_excel_files(directory):
     """
     Read all Excel files in a directory and display their sheet contents in a dropdown menu
@@ -43,9 +37,7 @@ def read_excel_files(directory):
 
 
 
-
 #DELETE FUNCTION FROM DIRECTORY = course_inputs
-
 def delete_excel_file(file_path):
     """
     Delete a specific Excel file
