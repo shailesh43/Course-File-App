@@ -5,7 +5,7 @@ from PIL import Image
 
 
 #PAGE CONFIG
-st.set_page_config(page_title="CourseFile app",page_icon="💀", layout="wide")
+st.set_page_config(page_title="CourseFile app",page_icon="cfa_logo.svg", layout="wide")
 
 #LOAD LOTTIE FILES
 def load_lottiefile(filepath: str):
@@ -22,7 +22,7 @@ def homepage():
         with open(file_name) as f:
             st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-    local_css("styles\\style.css")
+    # local_css("styles\style.css")
     # ---- LOAD ASSETS ----
     lottie_coding = load_lottiefile("images/coding.json")
     lottie_excelgif = load_lottiefile("images/excel_gif.json")
