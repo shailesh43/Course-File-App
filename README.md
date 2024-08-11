@@ -1,29 +1,37 @@
 # Course File app
+>An asist to the professors to manage course related statistics
 
-### _About streamlit_
+---
 
-[Learn about streamlit](https://streamlit.io/)
+<!-- [Learn about streamlit](https://streamlit.io/) -->
 
-### 1. **requirements**
+ What is Course File App?
 
-[Run this to import all the libraries used]
+Coursefile is a streamlined web application designed to assist university professors in
+managing essential academic tasks efficiently. Built using Python Streamlit for its
+simplicity and rapid development capabilities, Coursefile offers a range of features
+tailored to meet the needs of educators.
 
-`This contains all the libraries used in this projects`
+Efficient course management allows for the creation and organization of course
+descriptions, schedules, and syllabi, facilitating consistent dissemination of course
+details. Marks management simplifies grading by enabling the recording and updating of
+student grades across various assessments
 
-```terminal
-pip install -r path_to_requirements.txt
-```
 
-### 2. **start script**
+## Features
 
-[Run this to start app]
+ **1. Run this command in your terminal to get started!**
+ 
+	 `pip install -r requirements.txt`
+	
+ **2. Start script of the project**
 
-```terminal
-streamlit run script.py
-```
+	 `streamlit run 1_📍_Home.py`
 
-### 3. **open browser with following link**
+ **3. Browse the given link**
 
-```
-http://localhost:8501/
-```
+>  http://localhost:8501/
+
+
+
+
